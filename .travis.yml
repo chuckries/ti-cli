@@ -1,0 +1,21 @@
+language: csharp
+solution: ti-cli.sln
+mono: none
+dotnet: 1.0.1
+
+os:
+  - linux
+  - osx
+
+dist: trusty # Ubuntu 14.04 when on linux
+osx_image: xcode8.3 # macOS 10.12 when on OS X
+
+# Work around NuGet issue #2163
+# https://github.com/NuGet/Home/issues/2163
+before_install:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then echo "Setting ulimit to 1024"; ulimit -n 1024; fi
+
+script:
+  - dotnet restore
+  - dotnet build
+  - dotnet test test/ti-tests.csproj
