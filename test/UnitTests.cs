@@ -1,43 +1,38 @@
 using Xunit;
+using Moq;
+using TI;
 
 namespace tests
 {
-    public class MockUnit : TI.Unit
-    {
-        public MockUnit(byte cost, byte roll, byte movement) : 
-            base(cost, roll, movement)
-        {
-        }
-    }
-
     public class UnitTests
     {
-        private readonly MockUnit _mockUnit;
-        private const byte kCost = 5;
-        private const byte kRoll = 8;
-        private const byte kMovement = 1;
+        Mock<IUnit> _mockUnit;
 
         public UnitTests()
         {
-            _mockUnit = new MockUnit(kCost, kRoll, kMovement);
+            _mockUnit = new Mock<IUnit>();
+            _mockUnit.SetupAllProperties();
         }
 
         [Fact]
         public void TestUnitCost()
         {
-            Assert.Equal(kCost, _mockUnit.Cost);
+            IUnit unit = _mockUnit.Object;
+            Assert.Equal(0, unit.Cost);
         }
 
         [Fact]
         public void TestUnitRoll()
         {
-            Assert.Equal(kRoll, _mockUnit.Roll);
+            IUnit unit = _mockUnit.Object;
+            Assert.Equal(0, unit.Roll);
         }
 
         [Fact]
         public void TestUnitMovement()
         {
-            Assert.Equal(kMovement, _mockUnit.Movement);
+            IUnit unit = _mockUnit.Object;
+            Assert.Equal(0, unit.Movement);
         }
     }
 }

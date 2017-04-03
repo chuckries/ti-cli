@@ -5,7 +5,19 @@ namespace TI
         bool IsDamaged { get; set; }
     }
 
-    public abstract class Unit
+    public interface IMoveable
+    {
+        void Move();
+    }
+
+    public interface IUnit
+    {
+        byte Cost { get; }
+        byte Roll { get; }
+        byte Movement { get; }
+    }
+
+    internal abstract class Unit : IUnit
     {
         public byte Cost { get; protected set; }
 
@@ -13,7 +25,7 @@ namespace TI
 
         public byte Movement { get; protected set; }
 
-        protected Unit(byte cost, byte roll, byte movement)
+        internal Unit(byte cost, byte roll, byte movement)
         {
             Cost = cost;
             Roll = roll;
