@@ -1,35 +1,35 @@
-namespace TI
-{
-    public interface IDamageable
-    {
-        bool IsDamaged { get; set; }
-    }
-
-    public interface IMoveable
-    {
-        void Move();
-    }
+namespace TI { namespace Unit {
 
     public interface IUnit
     {
         byte Cost { get; }
+    }
+
+    public interface ICombative
+    {
         byte Roll { get; }
+    }
+
+    public interface IMoveable
+    {
         byte Movement { get; }
+        void Move();
+    }
+
+    public interface IDamageable
+    {
+        bool IsDamaged { get; set; }
     }
 
     internal abstract class Unit : IUnit
     {
         public byte Cost { get; protected set; }
 
-        public byte Roll { get; protected set; }
-
-        public byte Movement { get; protected set; }
-
-        internal Unit(byte cost, byte roll, byte movement)
+        internal Unit(byte cost)
         {
             Cost = cost;
-            Roll = roll;
-            Movement = movement;
         }
     }
-}
+
+} // namespace Unit
+} // namepsace TI

@@ -1,12 +1,12 @@
 using Xunit;
 using Moq;
-using TI;
+using TI.Unit;
 
 namespace tests
 {
     public class UnitTests
     {
-        Mock<IUnit> _mockUnit;
+        private Mock<IUnit> _mockUnit;
 
         public UnitTests()
         {
@@ -19,20 +19,6 @@ namespace tests
         {
             IUnit unit = _mockUnit.Object;
             Assert.Equal(0, unit.Cost);
-        }
-
-        [Fact]
-        public void TestUnitRoll()
-        {
-            IUnit unit = _mockUnit.Object;
-            Assert.Equal(0, unit.Roll);
-        }
-
-        [Fact]
-        public void TestUnitMovement()
-        {
-            IUnit unit = _mockUnit.Object;
-            Assert.Equal(0, unit.Movement);
         }
     }
 }
