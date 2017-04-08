@@ -7,7 +7,7 @@
         {
             "taskName": "build",
             "args": [
-                "${workspaceRoot}/src/ti-cli.csproj"
+                "${workspaceRoot}/app/ti-cli.csproj"
             ],
             "isBuildCommand": true,
             "problemMatcher": "$msCompile"
