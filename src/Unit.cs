@@ -5,7 +5,7 @@ namespace TI { namespace Unit {
         byte Cost { get; }
     }
 
-    public interface ICombative
+    public interface ICombatant
     {
         byte Roll { get; }
     }
