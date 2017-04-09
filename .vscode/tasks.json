@@ -7,7 +7,7 @@
         {
             "taskName": "build",
             "args": [
-                "${workspaceRoot}/app/ti-cli.csproj"
+                "${workspaceRoot}/TwilightImperium.sln"
             ],
             "isBuildCommand": true,
             "problemMatcher": "$msCompile"

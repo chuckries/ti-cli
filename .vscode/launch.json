@@ -6,9 +6,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceRoot}/app/bin/Debug/netcoreapp1.1/ti-cli.dll",
+            "program": "${workspaceRoot}/src/TwilightImperium.CLI/bin/Debug/netcoreapp1.1/TwilightImperium.CLI.dll",
             "args": [],
-            "cwd": "${workspaceRoot}",
+            "cwd": "${workspaceRoot}/src/TwilightImperium.CLI",
             "console": "internalConsole",
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart"

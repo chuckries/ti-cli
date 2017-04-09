@@ -1,0 +1,68 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{32047CD4-18B7-4DB6-9FFB-269CD48477BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwilightImperium", "src\TwilightImperium\TwilightImperium.csproj", "{A8137A5C-47B0-4355-AF8D-5049AC92D284}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwilightImperium.CLI", "src\TwilightImperium.CLI\TwilightImperium.CLI.csproj", "{7F977B4F-D461-4CA5-BE20-A14147EF2BA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ti-tests", "test\ti-tests.csproj", "{ABBBE29D-F0FF-42F5-ACA1-F990F352C550}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8137A5C-47B0-4355-AF8D-5049AC92D284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8137A5C-47B0-4355-AF8D-5049AC92D284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8137A5C-47B0-4355-AF8D-5049AC92D284}.Debug|x64.ActiveCfg = Debug|x64
+		{A8137A5C-47B0-4355-AF8D-5049AC92D284}.Debug|x64.Build.0 = Debug|x64
+		{A8137A5C-47B0-4355-AF8D-5049AC92D284}.Debug|x86.ActiveCfg = Debug|x86
+		{A8137A5C-47B0-4355-AF8D-5049AC92D284}.Debug|x86.Build.0 = Debug|x86
+		{A8137A5C-47B0-4355-AF8D-5049AC92D284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8137A5C-47B0-4355-AF8D-5049AC92D284}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8137A5C-47B0-4355-AF8D-5049AC92D284}.Release|x64.ActiveCfg = Release|x64
+		{A8137A5C-47B0-4355-AF8D-5049AC92D284}.Release|x64.Build.0 = Release|x64
+		{A8137A5C-47B0-4355-AF8D-5049AC92D284}.Release|x86.ActiveCfg = Release|x86
+		{A8137A5C-47B0-4355-AF8D-5049AC92D284}.Release|x86.Build.0 = Release|x86
+		{7F977B4F-D461-4CA5-BE20-A14147EF2BA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F977B4F-D461-4CA5-BE20-A14147EF2BA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F977B4F-D461-4CA5-BE20-A14147EF2BA3}.Debug|x64.ActiveCfg = Debug|x64
+		{7F977B4F-D461-4CA5-BE20-A14147EF2BA3}.Debug|x64.Build.0 = Debug|x64
+		{7F977B4F-D461-4CA5-BE20-A14147EF2BA3}.Debug|x86.ActiveCfg = Debug|x86
+		{7F977B4F-D461-4CA5-BE20-A14147EF2BA3}.Debug|x86.Build.0 = Debug|x86
+		{7F977B4F-D461-4CA5-BE20-A14147EF2BA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F977B4F-D461-4CA5-BE20-A14147EF2BA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F977B4F-D461-4CA5-BE20-A14147EF2BA3}.Release|x64.ActiveCfg = Release|x64
+		{7F977B4F-D461-4CA5-BE20-A14147EF2BA3}.Release|x64.Build.0 = Release|x64
+		{7F977B4F-D461-4CA5-BE20-A14147EF2BA3}.Release|x86.ActiveCfg = Release|x86
+		{7F977B4F-D461-4CA5-BE20-A14147EF2BA3}.Release|x86.Build.0 = Release|x86
+		{ABBBE29D-F0FF-42F5-ACA1-F990F352C550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABBBE29D-F0FF-42F5-ACA1-F990F352C550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABBBE29D-F0FF-42F5-ACA1-F990F352C550}.Debug|x64.ActiveCfg = Debug|x64
+		{ABBBE29D-F0FF-42F5-ACA1-F990F352C550}.Debug|x64.Build.0 = Debug|x64
+		{ABBBE29D-F0FF-42F5-ACA1-F990F352C550}.Debug|x86.ActiveCfg = Debug|x86
+		{ABBBE29D-F0FF-42F5-ACA1-F990F352C550}.Debug|x86.Build.0 = Debug|x86
+		{ABBBE29D-F0FF-42F5-ACA1-F990F352C550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABBBE29D-F0FF-42F5-ACA1-F990F352C550}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABBBE29D-F0FF-42F5-ACA1-F990F352C550}.Release|x64.ActiveCfg = Release|x64
+		{ABBBE29D-F0FF-42F5-ACA1-F990F352C550}.Release|x64.Build.0 = Release|x64
+		{ABBBE29D-F0FF-42F5-ACA1-F990F352C550}.Release|x86.ActiveCfg = Release|x86
+		{ABBBE29D-F0FF-42F5-ACA1-F990F352C550}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A8137A5C-47B0-4355-AF8D-5049AC92D284} = {32047CD4-18B7-4DB6-9FFB-269CD48477BA}
+		{7F977B4F-D461-4CA5-BE20-A14147EF2BA3} = {32047CD4-18B7-4DB6-9FFB-269CD48477BA}
+	EndGlobalSection
+EndGlobal

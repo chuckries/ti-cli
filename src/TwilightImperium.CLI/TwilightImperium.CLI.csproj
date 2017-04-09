@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\src\ti-lib.csproj" />
+    <ProjectReference Include="..\TwilightImperium\TwilightImperium.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

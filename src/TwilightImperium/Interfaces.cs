@@ -1,10 +1,5 @@
-namespace TI { namespace Unit {
-
-    public interface IUnit
-    {
-        byte Cost { get; }
-    }
-
+namespace TwilightImperium
+{
     public interface ICombatant
     {
         byte Roll { get; }
@@ -20,6 +15,4 @@ namespace TI { namespace Unit {
     {
         bool IsDamaged { get; set; }
     }
-
-} // namespace Unit
-} // namepsace TI
+}

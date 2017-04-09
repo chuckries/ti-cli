@@ -18,5 +18,4 @@ before_install:
 script:
   - dotnet restore
   - dotnet build
-  - dotnet run -p app/ti-cli.csproj
   - dotnet test test/ti-tests.csproj
