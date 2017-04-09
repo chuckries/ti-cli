@@ -1,5 +1,7 @@
-namespace TI { namespace Unit {
-
+namespace TI
+{
+namespace Unit
+{
     public interface IUnit
     {
         byte Cost { get; }
@@ -13,6 +15,7 @@ namespace TI { namespace Unit {
     public interface IMoveable
     {
         byte Movement { get; }
+
         void Move();
     }
 
@@ -20,6 +23,5 @@ namespace TI { namespace Unit {
     {
         bool IsDamaged { get; set; }
     }
-
 } // namespace Unit
 } // namepsace TI
